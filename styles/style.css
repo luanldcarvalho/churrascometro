@@ -1,122 +1,163 @@
-.container{
-    max-width: 500px;
-    margin:auto;
-    background-color: #3A2618;
-    background-image: url(../images/barbecue-500.jpg);
-    background-attachment: fixed;
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: inline-start;
-    box-shadow: #171614;
-    -webkit-box-shadow: 9px 9px 9px ;
-    overflow: auto;
+:root {
+  --medium-brown: #3a2618;
+  --dark-brown: #171614;
+  --white: #fff;
+  --black: #000;
 }
 
-.container2{
-    max-width: 800px;
-    margin:auto;
-    background-color: #3A2618;
-    background-image: url(../images/barbecue-800.jpg);
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: inline-start;
-    box-shadow: #171614;
-    -webkit-box-shadow: 9px 9px 9px ;
-    overflow: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#resultado{
-    -webkit-box-shadow: 0px 0px 0px;
+html {
+  font-size: 62, 5%;
 }
 
-#consumo1{
-    width: 50%;
-    display: block;
-    box-sizing: border-box;
-    float: left;
+body {
+  background-image: url(../images/barbecue-background.jpg);
+  margin: auto;
 }
 
-#consumo2{
-    width: 50%;
-    display: block;
-    box-sizing: border-box;
-    float: right;
+h1 {
+  display: block;
+  text-align: center;
+  margin: 15px;
+  color: var(--white);
 }
 
-.separador{
-    background-color: black;
-    width: 50%;
-    display: block;
-    box-sizing: border-box;
-    float: right;
+ul,
+p {
+  color: var(--white);
+  list-style: none;
+  margin: 15px;
 }
 
-h1, h2, h3, h4, h5, p{
-    margin-top: 0px;
-    color: white;
+li {
+  margin: 10px;
 }
 
-h1, h2, h3{
-    text-align: center;
-    text-shadow: red 2px 2px 5px;
+input {
+  width: 70%;
+  display: block;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #9b8b7c;
+  color: var(--white);
+  margin: 15px auto;
 }
 
-h1{
-    font-size: 36px;
+input::placeholder {
+  color: rgb(255, 255, 255);
 }
 
-h2{
-    font-size: 30px;
+input:focus {
+  background-color: #dbc6b3;
 }
 
-h3{
-    font-size: 24px;
+button {
+  width: 70%;
+  display: block;
+  border-radius: 50px;
+  border: none;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--medium-brown);
+  color: var(--white);
+  transition: all 0.2s;
 }
 
-h4{
-    font-size: 16px;
-    text-shadow: red 2px 2px 5px;
+button:hover {
+  box-shadow: 5px 10px 10px rgba(177, 165, 5, 0.411);
+  transform: translateY(-2px);
 }
 
-h5{
-    font-size: 20px;
-    text-shadow: rgb(255, 115, 0) 2px 2px 5px;
+button:focus,
+input:focus {
+  outline: none;
 }
 
-p{
-    font-size: 16px;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-input{
-    width: 50%;
-    display: block;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    background-color: #171614;
-    color: white;
-    margin-right: auto;
-    margin-left: auto;
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 100px rgba(177, 166, 5, 0.829);
 }
 
-body{
-    background-image: url(../images/barbecue-background.jpg);
-    margin: auto;
-
+::-webkit-scrollbar-thumb {
+  background: var(--medium-brown);
 }
 
-button{
-    width: 50%;
-    display: block;
-    box-sizing: border-box;
-    padding: 5px;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: var(--medium-brown);
+  background-image: url(../images/barbecue-500.jpg);
+  background-attachment: fixed;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: inline-start;
+  box-shadow: 9px 9px 10px rgba(177, 165, 5, 0.411);
+
+  overflow: auto;
 }
 
-3A2618 claro
-171614 escuro
+.container2 {
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--medium-brown);
+  background-image: url(../images/barbecue-800.jpg);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: inline-start;
+  box-shadow: var(--dark-brown);
+  -webkit-box-shadow: 9px 9px 9px;
+  overflow: auto;
+}
+
+#resultado {
+  -webkit-box-shadow: 0px 0px 0px;
+}
+
+#consumo1 {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+}
+
+#consumo2 {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  float: right;
+}
+
+.separador {
+  background-color: var(--black);
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  float: right;
+}
+
+.titulo {
+  margin-top: 20px;
+  color: #cab814;
+}
+
+.titulo-secao {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--white);
+}

@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Churrascômetro</title>
-</head>
-<body>
-    <div class='container'>
-        <h1>Churrascômetro</h1>
-        <input type="number" name="adultos" id="adultos" placeholder="Adultos">
-        <input type="number" name="criancas" id="criancas" placeholder="Crianças">
-        <input type="number" name="duracao" id="duracao" placeholder="Duração em Horas">
-        <button onclick="calcular()">Calcular</button>
-        <div id='resultado' class="container"><h3>Resultado Aqui</h3></div>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Churrascômetro</h1>
+      <input type="number" name="adultos" id="adultos" placeholder="Adultos" />
+      <input
+        type="number"
+        name="criancas"
+        id="criancas"
+        placeholder="Crianças"
+      />
+      <input
+        type="number"
+        name="duracao"
+        id="duracao"
+        placeholder="Duração em Horas"
+      />
+      <button class="calcular">Calcular</button>
+      <div id="resultado" class="container">
+        <h2 class="titulo-secao">Resultado Aqui</h2>
+      </div>
     </div>
     <div class="container2">
-        <h2>Médias de Consumo</h2>
-        
-        <div id="consumo1">
-        <h4>Eventos Curtos ( Até 5 horas )</h4>
-        <h5>Adultos</h5>
-        <p>400g de Carne.</p>
-        <p>1,2L de Cerveja.</p>
-        <p>1L de Bebidas.</p>
-        <h5>Jovens</h5>
-        <p>200g de Carne.</p>
-        <p>500mL de Bebidas.</p>
-        </div>
-        <div class="separador"></div>
-        <div id="consumo2">
-        <h4>Eventos Longos ( Mais de 5 horas )</h4>
-        <h5>Adultos</h5>
-        <p>700g de Carne.</p>
-        <p>2L de Cerveja.</p>
-        <p>1,5L de Bebidas.</p>
-        <h5>Jovens</h5>
-        <p>350g de Carne.</p>
-        <p>750mL de Bebidas.</p>
-        </div>
+      <h2 class="titulo-secao">Médias de Consumo</h2>
+
+      <div id="consumo1">
+        <h3 class="titulo">Eventos Curtos ( Até 5 horas )</h3>
+        <h3 class="titulo">Adultos</h3>
+        <ul>
+          <li>400g de Carne</li>
+          <li>1,2L de Cerveja</li>
+          <li>1L de Bebidas</li>
+        </ul>
+        <h3 class="titulo">Jovens</h3>
+        <ul>
+          <li>200g de Carne.</li>
+          <li>500mL de Bebidas.</li>
+        </ul>
+      </div>
+      <div class="separador"></div>
+      <div id="consumo2">
+        <h3 class="titulo">Eventos Longos ( Mais de 5 horas )</h3>
+        <h3 class="titulo">Adultos</h3>
+        <ul>
+          <li>700g de Carne.</li>
+          <li>2L de Cerveja.</li>
+          <li>1,5L de Bebidas.</li>
+        </ul>
+        <h3 class="titulo">Jovens</h3>
+        <ul>
+          <li>350g de Carne.</li>
+          <li>750mL de Bebidas.</li>
+        </ul>
+      </div>
     </div>
 
-
     <script src="./scripts/script.js"></script>
-    
-</body>
+  </body>
 </html>
